@@ -10,7 +10,7 @@ export default function LandingPage() {
             <Diamond size={48} />
           </div>
           <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight">Diamond Bank</h1>
-          <p className="text-slate-600 text-lg">Excellence in every transaction.</p>
+          <p className="text-slate-600 text-lg font-medium">Enterprise Secure Banking Portal</p>
         </div>
 
         <div className="bg-white p-8 rounded-3xl shadow-2xl border border-slate-200 space-y-8 relative overflow-hidden">
