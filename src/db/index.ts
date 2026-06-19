@@ -1,10 +1,11 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 
-const databaseUrl = process.env.DATABASE_URL;
+// Vercel Postgres uses POSTGRES_URL, local uses DATABASE_URL
+const databaseUrl = process.env.POSTGRES_URL || process.env.DATABASE_URL;
 
 if (!databaseUrl) {
-  throw new Error("DATABASE_URL is required");
+  throw new Error("Database connection string (POSTGRES_URL or DATABASE_URL) is required");
 }
 
 const globalForDb = globalThis as typeof globalThis & {
