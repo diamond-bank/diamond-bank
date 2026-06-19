@@ -7,8 +7,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Diamond Bank | Excellence in Banking",
-  description: "Experience modern online banking with Diamond Bank.",
+  title: "Diamond Bank | Global Secure Banking",
+  description: "Experience world-class online banking with Diamond Bank.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
